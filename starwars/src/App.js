@@ -28,10 +28,11 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {people.map((person, index) => <PersonCard key={index} person={person}/>
-      )}
+      <div className="peopleCards">
+        {people.map((person, index) => <PersonCard key={index} person={person}/>)}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
